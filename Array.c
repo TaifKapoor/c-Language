@@ -1,93 +1,93 @@
-#include <stdio.h>
+// #include <stdio.h>
 
-////////////////////////             Array            ///////////////////
+// ////////////////////////             Array            ///////////////////
 
-////  Defination =>     Array ek collection hai jisme same type ke multiple values (jaise int, float, char) ko ek hi naam ke saath store kar sakte ho.
+// ////  Defination =>     Array ek collection hai jisme same type ke multiple values (jaise int, float, char) ko ek hi naam ke saath store kar sakte ho.
 
-//// Without Array:
+// //// Without Array:
 
-// int a = 10;
-// int b = 20;
-// int c = 30;
+// // int a = 10;
+// // int b = 20;
+// // int c = 30;
 
-// With Array:
+// // With Array:
 
-// int arr[3] = {10, 20, 30};              // Yaha arr ek array hai jisme 3 values store hain.
-// float marks[3] = {85.5, 90.0, 78.75};
+// // int arr[3] = {10, 20, 30};              // Yaha arr ek array hai jisme 3 values store hain.
+// // float marks[3] = {85.5, 90.0, 78.75};
 
-//   Array me Indexing 0 se start hoti h
+// //   Array me Indexing 0 se start hoti h
 
-// printf("%d", arr[0]);                       // Access krne ka trika Output 10
+// // printf("%d", arr[0]);                       // Access krne ka trika Output 10
 
-///   Array Ke Elements Access Karna
+// ///   Array Ke Elements Access Karna
 
-// int main()
-// {
-//     int arr[5] = {10, 20, 30, 40, 50};             
+// // int main()
+// // {
+// //     int arr[5] = {10, 20, 30, 40, 50};             
 
-//     printf("Pehla element: %d\n", arr[0]);             // 10
-//     printf("dusra element: %d\n", arr[1]);             // 10
-//     printf("Teesra element: %d\n", arr[2]);          // 30
-//     printf("fourth element: %d\n", arr[3]);          // 30
+// //     printf("Pehla element: %d\n", arr[0]);             // 10
+// //     printf("dusra element: %d\n", arr[1]);             // 10
+// //     printf("Teesra element: %d\n", arr[2]);          // 30
+// //     printf("fourth element: %d\n", arr[3]);          // 30
 
-//     arr[0] = 100;                                     // 4th position pe value change kar di
-//     printf("Naya 4th element: %d\n", arr[0]);
+// //     arr[0] = 100;                                     // 4th position pe value change kar di
+// //     printf("Naya 4th ;element: %d\n", arr[0]);
 
-//     return 0;
-// }
-
-
-
-/////////////    Array ko  declare karne ke trike
-
-
-//  (1) Simple Declaration
-// int arr[5];                   /// sirf memory allocate hui, value nahi di
-
-//     (2) Declaration + Initialization
-// int arr[5] = {10, 20, 30, 40, 50};
-
-///    (3) Size auto detect
-// int arr[] = {10, 20, 30};                   // compiler khud size = 3 le lega
-
-///    (4) Partial Initialization
-// int arr[5] = {10, 20};                    // baaki values automatically 0 ho jayengi  Output: 10 20 0 0 0
-
-//     (5) Individual assignment
-// int arr[3];                              // size bta do or bad me value dal do
-
-// arr[0] = 10;
-// arr[1] = 20;
-// arr[2] = 30;
-
-
-/////       Array Ke Saath Loop
-
-// int main()
-// {
-//     int arr[3] = {10, 20, 30};
-
-//     for (int i = 0; i < 3; i++){
-//         printf("%d ", arr[i]);
-//     }
-// }
+// //     return 0;
+// // }
 
 
 
+// /////////////    Array ko  declare karne ke trike
 
-///        Types of Arrays in C
 
-/////  (1) 1D Array (Most common)
-// int arr[5];
+// //  (1) Simple Declaration
+// // int arr[5];                   /// sirf memory allocate hui, value nahi di
 
-///     (2) 2D Array (Matrix)
-// int arr[2][3] = {
-//     {1, 2, 3},
-//     {4, 5, 6}
-// };
+// //     (2) Declaration + Initialization
+// // int arr[5] = {10, 20, 30, 40, 50};
 
-//      (3) Multi-Dimensional Array
-// int arr[2][2][2];
+// ///    (3) Size auto detect
+// // int arr[] = {10, 20, 30};                   // compiler khud size = 3 le lega
+
+// ///    (4) Partial Initialization
+// // int arr[5] = {10, 20};                    // baaki values automatically 0 ho jayengi  Output: 10 20 0 0 0
+
+// //     (5) Individual assignment
+// // int arr[3];                              // size bta do or bad me value dal do
+
+// // arr[0] = 10;
+// // arr[1] = 20;
+// // arr[2] = 30;
+
+
+// /////       Array Ke Saath Loop
+
+// // int main()
+// // {
+// //     int arr[3] = {10, 20, 30};
+
+// //     for (int i = 0; i < 3; i++){
+// //         printf("%d ", arr[i]);
+// //     }
+// // }
+
+
+
+
+// ///        Types of Arrays in C
+
+// /////  (1) 1D Array (Most common)
+// // int arr[5];
+
+// ///     (2) 2D Array (Matrix)
+// // int arr[2][3] = {
+// //     {1, 2, 3},
+// //     {4, 5, 6}
+// // };
+
+// //      (3) Multi-Dimensional Array
+// // int arr[2][2][2];
 
 
 
@@ -120,3 +120,57 @@
     
 //     return 0;
 // }
+
+
+
+
+
+
+
+
+// int main(){
+//     int arr[3] = {10, 12, 14};
+
+//     printf("%d", arr[2]);
+// }
+
+
+// int main(){
+
+//     int kuch[] = {10, 12, 14, 78, 654, 872};
+
+    
+//     printf("First value: %d\n", kuch[6]);
+    
+// // }
+
+// int main(){
+//     int ek[5] = {19,12,3,2,4,23};
+
+//     printf("%d\n",ek[3]);
+//     printf("%d\n",ek[4]);
+// // }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int marks[5] ={45,55};
+// }
+
+
+
+#include<stdio.h>
+int main(){
+
+    int marks[4] = {12,13,14,15};
+
+    printf(" first element : %d\n",marks[0]);
+    printf(" sec element : %d\n",marks[1]);
+    printf(" third element : %d\n",marks[2]);
+
+    return 0;
+}
+
+
+
+
