@@ -1,7 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+
+struct boy{
+
+    int marks ;
+    char alpha[23];
+    float percent ;
+};
+
+
 int main(){
-  int arr[4] = {20, 80, 55, 67};
 
-  printf{"third value of arr: %d\n", arr[3]};
 
-  return 0;
+    struct boy b1 = {73,"abcde",39.032};
+
+    printf("int value =>%d\n", b1.marks);
+    printf("float value =>%f\n", b1.percent);
+    printf("char value =>%s\n", b1.alpha);
+
+    return 0 ;
 }

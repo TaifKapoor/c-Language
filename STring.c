@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
 
 
 // /////////////////////    String       ///////////
@@ -71,59 +72,18 @@
 
 
 
+// strcpy  full form "string copy"  yh ek str ko dusri str me copy krta h 
 
-///   String Input Lena (scanf, gets, fgets) 
-
-// int main() {
-//     char name[50];
-//     char city[50];
-//     char fullname[100];
-    
-//     // Method 1: scanf – stops at space
-//     printf("Enter your name (no space): ");
-//     scanf("%s", name);  // & nahi lagta, because array name is address
-//     printf("Hello %s\n", name);
-    
-//     // Method 2: gets() – unsafe (deprecated)
-//     // gets(fullname);  // Avoid karo, buffer overflow hota hai
-    
-//     // Method 3: fgets() – safe (recommended)
-//     printf("Enter your full name: ");
-//     fgets(fullname, sizeof(fullname), stdin);
-//     printf("Your name: %s", fullname);
-    
-//     // Method 4: scanf with %[^\n] – reads until newline
-//     printf("Enter your city: ");
-//     scanf(" %[^\n]", city);  // space pehle previous newline hatane ke liye
-//     printf("City: %s\n", city);
-    
-//     return 0;
-// }
-
-
-
-
+// syntax 
+// strcpy(destination, source)  
+// source => jha se copy krna h , destination => jha paste krna h 
 
 int main(){
+    char str1[10] = "hello";
+    char str2[10];
 
-    char str1[4] = {'h','e','y','\0'};
-    char str2[] = "quantum";
-    char *str3 = "c++ programing";
-
-
-    printf("str1  hai ye :%s\n ",str1);
-    printf("str2  hai ye :%s\n ",str2);
-    printf("str3 hai ye :%s\n ",str3);
-
-
-    printf("str1 ka eklota char hai: %c\n",str1[1]);
-    printf("str1 ka eklota char hai: %c\n",str1[2]);
-    
-    str1[2] = 'l';
-    printf("str1 ka updated version: %c\n",str1[2]);
-
-
-    str3[0] = 'p';
-     printf("str3 ka updated version: %c\n",str3[0]);
-
+    strcpy(str2, str1);
+    printf("%s", str2);
 }
+
+

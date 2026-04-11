@@ -1,17 +1,16 @@
-#include <stdio.h>
-int main()
-{
+#include<stdio.h>
+#include<string.h>
 
-    int num[4] = {66, 90, 87, 23};
 
-    printf(" first value =>%d\n", num[2]);
-    printf(" sec value =>%d\n", num[0]);
+struct  boy {
+    int value;
+    char alpha[23];
+    float decial;
+};
 
-    num[3] = 77;
-    printf("new update%d\n", num[3]);
 
-    for (int i = 0; i < 4; i++)
-    {
-        printf(" %d\n", num[i]);
-    }
+int main(){
+
+    
 }
+

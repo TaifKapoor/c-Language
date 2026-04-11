@@ -1,16 +1,16 @@
-// #include<stdio.h>
+#include<stdio.h>
 
-// int main(){
+int main(){
 
-//     int age = 16;
-//     float marks = 55.4;
-//     char grade = 'A';
+    int age;
+    float marks = 55.4;
+    char grade = 'A';
 
-//     printf("Age : %d\n" , age);
-//     printf("Marks : %f.3\n" , marks);
-//     printf("Marks : %c\n" , grade);
-//     return 0;
-// }
+    printf("Age : %d\n" , age);
+    printf("Marks : %f.3\n" , marks);
+    printf("Marks : %c\n" , grade);
+    return 0;
+}
 
 
 
